@@ -1,5 +1,5 @@
 import { Router } from "express";
-import Service from "../models/Service.js";
+import Service from "../models/service.js";
 import { auth } from "../middleware/auth.js";
 import { permit } from "../middleware/roles.js";
 
@@ -36,3 +36,4 @@ router.delete("/:id", auth, permit("admin"), async (req, res) => {
 });
 
 export default router;
+
