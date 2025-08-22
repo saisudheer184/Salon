@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Book Appointment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="book.html">Book</a>
+    <a href="dashboard.html">My Dashboard</a>
+    <a href="admin.html">Admin</a>
+    <a href="contact.html">Contact</a>
+    <a href="location.html">Location</a>
+    <a href="timings.html">Timings</a>
+    <a href="register.html">Register</a>
+    <span id="navUser" style="float:right"></span>
+  </nav>
+</header>
+
+<main class="grid">
+  <section class="card">
+    <h2>Book an Appointment</h2>
+    <form id="bookForm" class="grid">
+      <label>Service</label>
+      <select id="service" name="service" class="input"></select>
+
+      <label>Date</label>
+      <input class="input" type="date" name="date" required />
+
+      <label>Time</label>
+      <input class="input" type="time" name="time" required />
+
+      <label>Notes (optional)</label>
+      <input class="input" type="text" name="notes" />
+
+      <button class="btn" type="submit">Book Now</button>
+    </form>
+    <p><small>If you clicked "Book" from a service, the service will already be selected.</small></p>
+  </section>
+</main>
+
+<footer>
+  <small>© 2025 GlowUp Salon</small>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
